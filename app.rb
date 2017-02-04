@@ -12,7 +12,7 @@ def postback message, channel
   HTTParty.post slack_webhook, body:
     {"text" => message.to_s,
      "username": "anonymous",
-     "icon_emoji": "anon",
+     "icon_emoji": ":anon:",
      "channel": params[:channel_id]}.to_json,
     headers: {'content-type': 'applocation/json'}
 end
