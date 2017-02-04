@@ -14,5 +14,5 @@ def postback message, channel
      "username": "anonymous",
      "icon_emoji": ":anon:",
      "channel": params[:channel_id]}.to_json,
-    headers: {'content-type': 'applocation/json'}
+    headers: {'content-type': 'application/json'}
 end
